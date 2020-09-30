@@ -9,7 +9,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text(
+          "InKom",
+          style: TextStyle(
+              fontSize: 28.0),
+        ),
+      ),
     );
   }
 }
