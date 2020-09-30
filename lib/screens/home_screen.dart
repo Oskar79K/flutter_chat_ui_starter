@@ -12,8 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(
           "InKom",
-          style: TextStyle(
-              fontSize: 28.0),
+          style: TextStyle(fontSize: 28.0),
         ),
       ),
     );
