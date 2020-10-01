@@ -5,7 +5,7 @@ class FavoriteContacts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8.0),
+      padding: EdgeInsets.symmetric(vertical: 10.0),
       child: Column(
         children: [
           Padding(
@@ -40,7 +40,7 @@ class FavoriteContacts extends StatelessWidget {
                 itemCount: favorites.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Padding(
-                    padding: EdgeInsets.all(12.0),
+                    padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                     child: Column(
                       children: [
                         CircleAvatar(
