@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui_starter/screens/home_screen.dart';
+import 'package:flutter_chat_ui_starter/theme/theme.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,10 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'InKom',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.blueGrey[900],
-        accentColor: Colors.blueGrey[50]
-      ),
+      theme: basicTheme(),
+      // theme: ThemeData(
+      //   primaryColor: Colors.blueGrey[900],
+      //   accentColor: Colors.blueGrey[50]
+      // ),
       home: HomeScreen(),
     );
   }

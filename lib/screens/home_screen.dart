@@ -22,10 +22,12 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         title: Text(
           "InKom",
-          style: TextStyle(
-            fontSize: 24.0,
-            fontWeight: FontWeight.bold,
-          ),
+          style: Theme.of(context).textTheme.headline1,
+          // style: TextStyle(
+          //
+          //   fontSize: 24.0,
+          //   fontWeight: FontWeight.bold,
+          // ),
         ),
         elevation: 0.0,
         actions: [
@@ -52,6 +54,10 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   FavoriteContacts(),
+                  Container(
+                    height: 300.0,
+                    color: Colors.blue,
+                  ),
                 ],
               ),
             ),
