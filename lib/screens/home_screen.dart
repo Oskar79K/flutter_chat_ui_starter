@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui_starter/widgets/category_selector.dart';
 import 'package:flutter_chat_ui_starter/widgets/favorite_contacts.dart';
+import 'package:flutter_chat_ui_starter/screens/drawer.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -8,20 +9,21 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          iconSize: 30.0,
-          color: Colors.white,
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   iconSize: 30.0,
+        //   color: Colors.white,
+        //   onPressed: () => Drawer(),
+        // ),
         title: Text(
-          "InKom",
+          "voestalpine",
           style: Theme.of(context).textTheme.headline1,
           // style: TextStyle(
           //
@@ -39,6 +41,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      drawer: Drawer(
+        child: Drawer(),
+      ),
       body: Column(
         children: [
           CategorySelector(),
@@ -55,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   FavoriteContacts(),
                   Container(
-                    height: 300.0,
+                    height: 200.0,
                     color: Colors.blue,
                   ),
                 ],
@@ -63,6 +68,30 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text('Home', style: Theme.of(context).textTheme.caption),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            title: Text('Chat', style: Theme.of(context).textTheme.caption),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            title: Text('My company'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.more_horiz),
+            title: Text('More'),
+          ),
+        ],
+        selectedItemColor: Theme.of(context).primaryColor,
+        unselectedItemColor: Colors.blueGrey[200],
       ),
     );
   }
