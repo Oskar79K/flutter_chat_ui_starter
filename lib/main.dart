@@ -48,7 +48,7 @@ class _SplashState extends State<Splash> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text("voestalpine", style: Theme.of(context).textTheme.headline1),
-          SizedBox(height: 30.0),
+          SizedBox(height: 40.0),
           SpinKitChasingDots(color: Colors.white, size: 30.0,)
         ],
       ),

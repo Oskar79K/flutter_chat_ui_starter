@@ -25,6 +25,23 @@ ThemeData basicTheme(){
         fontSize: 14.0,
         color: Colors.blueGrey,
       ),
+      subtitle2: base.subtitle2.copyWith(
+        fontFamily: "voestalpine",
+        fontWeight: FontWeight.w700,
+        fontSize: 12.0,
+        color: Colors.white,
+      ),
+      headline4: base.headline4.copyWith(
+        fontFamily: "voestalpine",
+        fontWeight: FontWeight.w400,
+        fontSize: 16.0,
+        color: Colors.grey,
+      ),
+      headline5: base.headline5.copyWith(
+        fontFamily: "voestalpine",
+        fontSize: 14.0,
+        color: Colors.blueGrey,
+      ),
     );
   }
   final ThemeData base = ThemeData.light();
