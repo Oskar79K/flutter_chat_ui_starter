@@ -21,15 +21,21 @@ ThemeData basicTheme(){
     ),
       caption: base.caption.copyWith(
         fontFamily: "voestalpine",
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w400,
         fontSize: 14.0,
-        color: Colors.blueGrey,
+        color: Colors.blueGrey[900],
       ),
       subtitle2: base.subtitle2.copyWith(
         fontFamily: "voestalpine",
         fontWeight: FontWeight.w700,
         fontSize: 12.0,
         color: Colors.white,
+      ),
+      subtitle1: base.subtitle1.copyWith(
+        fontFamily: "voestalpine",
+        fontWeight: FontWeight.w500,
+        fontSize: 14.0,
+        color: Colors.blueGrey[200],
       ),
       headline4: base.headline4.copyWith(
         fontFamily: "voestalpine",
