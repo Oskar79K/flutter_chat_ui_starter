@@ -79,26 +79,26 @@ class _ChatScreenState extends State<ChatScreen> {
       color: Colors.white,
       child: Row(
         children: [
-          IconButton(icon: Icon(Icons.photo),
+          IconButton(
+            icon: Icon(Icons.photo),
             iconSize: 25.0,
             color: Theme.of(context).primaryColor,
             onPressed: () {},
           ),
           Expanded(
               child: TextField(
-                textCapitalization: TextCapitalization.sentences,
-                onChanged: (value) {},
-                decoration: InputDecoration.collapsed(
-                    hintText: "Skicka meddelande"),
-                style: Theme.of(context).textTheme.caption.copyWith(fontSize: 16.0),
-              )
-          ),
-          IconButton(icon: Icon(Icons.send),
+            textCapitalization: TextCapitalization.sentences,
+            onChanged: (value) {},
+            decoration:
+                InputDecoration.collapsed(hintText: "Skicka meddelande"),
+            style: Theme.of(context).textTheme.caption.copyWith(fontSize: 16.0),
+          )),
+          IconButton(
+            icon: Icon(Icons.send),
             iconSize: 25.0,
             color: Theme.of(context).primaryColor,
             onPressed: () {},
           )
-
         ],
       ),
     );
